@@ -30,7 +30,7 @@ if (!app.Environment.IsDevelopment())
 {
   app.UseExceptionHandler();
 
-  //Referente of Details that you can do.
+  //Reference of Details that you can do.
   // app.UseExceptionHandler(configureApplicationBuilder =>
   // {
   //   configureApplicationBuilder.Run(async context =>
