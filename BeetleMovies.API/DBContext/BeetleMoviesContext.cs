@@ -1,9 +1,10 @@
 using BeetleMovies.API.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BeetleMovies.API.DBContext;
 
-public class BeetleMoviesContext(DbContextOptions<BeetleMoviesContext> options) : DbContext(options)
+public class BeetleMoviesContext(DbContextOptions<BeetleMoviesContext> options) : IdentityDbContext(options)
 {
     public DbSet<Movie> Movies { get; set; }
 
